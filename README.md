@@ -18,6 +18,14 @@ const hit = new HighlightInTextarea('.my-textarea', {
   highlight: whatever // string, regexp, array, function, or custom object
 });
 ```
+or
+```javascript
+const el = document.querySelector('.my-textarea');
+const hit = new HighlightInTextarea(el, {
+  highlight: whatever // string, regexp, array, function, or custom object
+});
+```
+
 
 The `highlight` property accepts several types of values to describe what will be highlighted. You can see the various ways to highlight things, along with example code, on **[the demo page](https://masterweber.github.io/highlight-in-textarea/)**.
 
