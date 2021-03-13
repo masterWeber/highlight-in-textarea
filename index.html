@@ -108,8 +108,7 @@
     <p>Note that this is case-insensitive.</p>
     <textarea class="string-example">Potato potato tomato potato.</textarea>
     <script>
-      let el = document.querySelector('.string-example');
-      new HighlightInTextarea(el, {
+      new HighlightInTextarea('.string-example', {
         highlight: 'potato',
       });
     </script>
@@ -120,8 +119,7 @@
     <p>Don't forget the <code>g</code> (find all) and <code>i</code> (case-insensitive) flags if you need them.</p>
     <textarea class="regex-example">Dog, cat, chicken, goose. Dogs, cats, chickens, geese.</textarea>
     <script>
-      el = document.querySelector('.regex-example');
-      new HighlightInTextarea(el, {
+      new HighlightInTextarea('.regex-example', {
         highlight: /dogs?|cats?|g(oo|ee)se/gi,
       });
     </script>
@@ -133,8 +131,7 @@
         (inclusive) and ends at the second character index (exclusive).</p>
     <textarea class="range-example">abcdefgh</textarea>
     <script>
-      el = document.querySelector('.range-example');
-      new HighlightInTextarea(el, {
+      new HighlightInTextarea('.range-example', {
         highlight: [2, 6],
       });
     </script>
@@ -145,8 +142,7 @@
     <p>You can highlight multiple things, using any types mentioned here, with an array.</p>
     <textarea class="array-example">apple watermelon banana orange mango</textarea>
     <script>
-      el = document.querySelector('.array-example');
-      new HighlightInTextarea(el, {
+      new HighlightInTextarea('.array-example', {
         highlight: [
           'orange',
           /ba(na)*/gi,
@@ -174,8 +170,7 @@
         }
       }
 
-      el = document.querySelector('.function-example');
-      new HighlightInTextarea(el, {
+      new HighlightInTextarea('.function-example', {
         highlight: getSmileyDayString,
       });
     </script>
@@ -188,8 +183,7 @@
         highlight color.</p>
     <textarea class="class-example">Here's a blueberry. There's a strawberry. Surprise, it's a banananana!</textarea>
     <script>
-      el = document.querySelector('.class-example');
-      new HighlightInTextarea(el, {
+      HighlightInTextarea.instance('.class-example', {
         highlight: [
           {
             highlight: 'strawberry',

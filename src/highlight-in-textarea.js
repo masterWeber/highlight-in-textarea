@@ -2,11 +2,20 @@ const HighlightInTextarea = function(el, config) {
   this.init(el, config);
 };
 
+HighlightInTextarea.instance = function(el, config) {
+  return new HighlightInTextarea(el, config);
+};
+
 HighlightInTextarea.prototype = {
   ID: 'hit',
 
   init: function(el, config) {
-    this.el = el;
+
+    if (typeof el === 'string') {
+      this.el = document.querySelector(el);
+    } else {
+      this.el = el;
+    }
 
     if (this.getType(config) === 'custom') {
       this.highlight = config;
@@ -74,9 +83,6 @@ HighlightInTextarea.prototype = {
         this.fixIOS();
         break;
     }
-
-    // plugin function checks this for success
-    this.isGenerated = true;
 
     // trigger input event to highlight any existing input
     this.handleInput();

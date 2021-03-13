@@ -13,8 +13,7 @@ A native textarea element is used and familiar behavior (auto-correct, scrolling
 To start, create an instance of `HighlightInTextarea`, passing in an element, and a config object.
 
 ```javascript
-const el = document.querySelector('.my-textarea');
-const hit = new HighlightInTextarea(el, {
+const hit = new HighlightInTextarea('.my-textarea', {
   highlight: whatever // string, regexp, array, function, or custom object
 });
 ```
@@ -61,8 +60,7 @@ Changes to `color` won't be visible, since text in the textarea covers colored t
 You can remove the plugin from a textarea with this.
 
 ```javascript
-const el = document.querySelector('.my-textarea');
-const hit = new HighlightInTextarea(el, {
+const hit = new HighlightInTextarea('.my-textarea', {
   highlight: whatever // string, regexp, array, function, or custom object
 });
 
