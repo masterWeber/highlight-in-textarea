@@ -19,7 +19,7 @@ const hwt = new HighlightWithinTextarea(el,{
 });
 ```
 
-The `highlight` property accepts several types of values to describe what will be highlighted. You can see the various ways to highlight things, along with example code, on **[the demo page](https://lonekorean.github.io/highlight-within-textarea/)**.
+The `highlight` property accepts several types of values to describe what will be highlighted. You can see the various ways to highlight things, along with example code, on **[the demo page](https://masterweber.github.io/highlight-within-textarea/)**.
 
 ## Styling
 
