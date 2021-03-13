@@ -1,9 +1,9 @@
-const HighlightWithinTextarea = function(el, config) {
+const HighlightInTextarea = function(el, config) {
   this.init(el, config);
 };
 
-HighlightWithinTextarea.prototype = {
-  ID: 'hwt',
+HighlightInTextarea.prototype = {
+  ID: 'hit',
 
   init: function(el, config) {
     this.el = el;
@@ -300,16 +300,16 @@ HighlightWithinTextarea.prototype = {
     boundaries.forEach(function(boundary, index) {
       let markup;
       if (boundary.type === 'start') {
-        markup = '{{hwt-mark-start|' + index + '}}';
+        markup = '{{hit-mark-start|' + index + '}}';
       } else {
-        markup = '{{hwt-mark-stop}}';
+        markup = '{{hit-mark-stop}}';
       }
       input = input.slice(0, boundary.index) + markup +
           input.slice(boundary.index);
     });
 
     // this keeps scrolling aligned when input ends with a newline
-    input = input.replace(/\n({{hwt-mark-stop}})?$/, '\n\n$1');
+    input = input.replace(/\n({{hit-mark-stop}})?$/, '\n\n$1');
 
     // encode HTML entities
     input = input.replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -320,7 +320,7 @@ HighlightWithinTextarea.prototype = {
     }
 
     // replace start tokens with opening <mark> tags with class name
-    input = input.replace(/{{hwt-mark-start\|(\d+)}}/g,
+    input = input.replace(/{{hit-mark-start\|(\d+)}}/g,
         function(match, subMatch) {
           const className = boundaries[+subMatch].className;
           if (className) {
@@ -331,7 +331,7 @@ HighlightWithinTextarea.prototype = {
         });
 
     // replace stop tokens with closing </mark> tags
-    input = input.replace(/{{hwt-mark-stop}}/g, '</mark>');
+    input = input.replace(/{{hit-mark-stop}}/g, '</mark>');
 
     this.highlights.innerHTML = input;
   },

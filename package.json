@@ -1,20 +1,20 @@
 {
-  "name": "highlight-within-textarea",
+  "name": "highlight-in-textarea",
   "version": "1.0.0",
   "description": "Library for highlighting bits of text within a textarea.",
-  "main": "src/highlight-within-textarea.js",
+  "main": "src/highlight-in-textarea.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/masterWeber/highlight-within-textarea.git"
+    "url": "git+https://github.com/masterWeber/highlight-in-textarea.git"
   },
   "bugs": {
-    "url": "https://github.com/masterWeber/highlight-within-textarea/issues"
+    "url": "https://github.com/masterWeber/highlight-in-textarea/issues"
   },
-  "homepage": "https://github.com/masterWeber/highlight-within-textarea#readme",
+  "homepage": "https://github.com/masterWeber/highlight-in-textarea#readme",
   "keywords": [
-    "plugin",
     "highlight",
     "textarea",
+    "input",
     "search"
   ],
   "author": "Stanislav Tkach <master.weber@outlook.com>",

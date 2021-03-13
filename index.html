@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Highlight Within Textarea</title>
+    <title>Highlight in Textarea</title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans+Mono" rel="stylesheet">
 
-    <!-- highlight-within-textarea CSS/JS -->
-    <link href="src/highlight-within-textarea.css" rel="stylesheet">
-    <script src="src/highlight-within-textarea.js"></script>
+    <!-- highlight-in-textarea CSS/JS -->
+    <link href="src/highlight-in-textarea.css" rel="stylesheet">
+    <script src="src/highlight-in-textarea.js"></script>
 
-    <!-- custom styles for highlight-within-textarea -->
+    <!-- custom styles for highlight-in-textarea -->
     <style>
-        .hwt-container {
+        .hit-container {
             background-color: #f8f9fa;
         }
 
-        .hwt-content {
+        .hit-content {
             width: 760px;
             height: 100px;
             padding: 20px;
@@ -25,24 +25,24 @@
             font: 18px/25px 'Droid Sans Mono', sans-serif;
         }
 
-        .hwt-input:focus {
+        .hit-input:focus {
             outline-color: #495057;
         }
 
-        .hwt-content mark {
+        .hit-content mark {
             border-radius: 3px;
             background-color: #d0bfff;
         }
 
-        .hwt-content mark.red {
+        .hit-content mark.red {
             background-color: #ffc9c9;
         }
 
-        .hwt-content mark.blue {
+        .hit-content mark.blue {
             background-color: #a3daff;
         }
 
-        .hwt-content mark.yellow {
+        .hit-content mark.yellow {
             background-color: #ffec99;
         }
     </style>
@@ -99,8 +99,8 @@
 <p>Some demos and code snippets for using the plugin. Edit textareas to see the real-time highlighting. View page source
     to see the CSS.</p>
 <p>
-    <a href="https://github.com/masterWeber/highlight-within-textarea/tree/master">Go to GitHub repo</a>
-    <a href="https://www.npmjs.com/package/highlight-within-textarea">Go to npm package</a>
+    <a href="https://github.com/masterWeber/highlight-in-textarea/tree/master">Go to GitHub repo</a>
+    <a href="https://www.npmjs.com/package/highlight-in-textarea">Go to npm package</a>
 </p>
 
 <section>
@@ -109,7 +109,7 @@
     <textarea class="string-example">Potato potato tomato potato.</textarea>
     <script>
       let el = document.querySelector('.string-example');
-      new HighlightWithinTextarea(el, {
+      new HighlightInTextarea(el, {
         highlight: 'potato',
       });
     </script>
@@ -121,7 +121,7 @@
     <textarea class="regex-example">Dog, cat, chicken, goose. Dogs, cats, chickens, geese.</textarea>
     <script>
       el = document.querySelector('.regex-example');
-      new HighlightWithinTextarea(el, {
+      new HighlightInTextarea(el, {
         highlight: /dogs?|cats?|g(oo|ee)se/gi,
       });
     </script>
@@ -134,7 +134,7 @@
     <textarea class="range-example">abcdefgh</textarea>
     <script>
       el = document.querySelector('.range-example');
-      new HighlightWithinTextarea(el, {
+      new HighlightInTextarea(el, {
         highlight: [2, 6],
       });
     </script>
@@ -146,7 +146,7 @@
     <textarea class="array-example">apple watermelon banana orange mango</textarea>
     <script>
       el = document.querySelector('.array-example');
-      new HighlightWithinTextarea(el, {
+      new HighlightInTextarea(el, {
         highlight: [
           'orange',
           /ba(na)*/gi,
@@ -175,7 +175,7 @@
       }
 
       el = document.querySelector('.function-example');
-      new HighlightWithinTextarea(el, {
+      new HighlightInTextarea(el, {
         highlight: getSmileyDayString,
       });
     </script>
@@ -189,7 +189,7 @@
     <textarea class="class-example">Here's a blueberry. There's a strawberry. Surprise, it's a banananana!</textarea>
     <script>
       el = document.querySelector('.class-example');
-      new HighlightWithinTextarea(el, {
+      new HighlightInTextarea(el, {
         highlight: [
           {
             highlight: 'strawberry',

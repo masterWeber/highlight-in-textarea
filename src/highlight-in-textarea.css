@@ -1,11 +1,11 @@
-.hwt-container {
+.hit-container {
     display: inline-block;
     position: relative;
     overflow: hidden !important;
     -webkit-text-size-adjust: none !important;
 }
 
-.hwt-backdrop {
+.hit-backdrop {
     position: absolute !important;
     top: 0 !important;
     right: -99px !important;
@@ -16,7 +16,7 @@
     overflow-y: auto !important;
 }
 
-.hwt-highlights {
+.hit-highlights {
     width: auto !important;
     height: auto !important;
     border-color: transparent !important;
@@ -26,7 +26,7 @@
     overflow: hidden !important;
 }
 
-.hwt-input {
+.hit-input {
     display: block !important;
     position: relative !important;
     margin: 0;
@@ -37,12 +37,12 @@
     overflow-y: auto !important;
 }
 
-.hwt-content {
+.hit-content {
     border: 1px solid;
     background: none transparent !important;
 }
 
-.hwt-content mark {
+.hit-content mark {
     padding: 0 !important;
     color: inherit;
 }

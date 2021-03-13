@@ -1,4 +1,4 @@
-# highlight-within-textarea
+# Highlight in Textarea
 
 Library for highlighting bits of text within a textarea.
 
@@ -10,24 +10,24 @@ A native textarea element is used and familiar behavior (auto-correct, scrolling
 
 ## Usage
 
-To start, create an instance of `HighlightWithinTextarea`, passing in an element, and a config object.
+To start, create an instance of `HighlightInTextarea`, passing in an element, and a config object.
 
 ```javascript
 const el = document.querySelector('.my-textarea');
-const hwt = new HighlightWithinTextarea(el,{
-    highlight: whatever // string, regexp, array, function, or custom object
+const hit = new HighlightInTextarea(el, {
+  highlight: whatever // string, regexp, array, function, or custom object
 });
 ```
 
-The `highlight` property accepts several types of values to describe what will be highlighted. You can see the various ways to highlight things, along with example code, on **[the demo page](https://masterweber.github.io/highlight-within-textarea/)**.
+The `highlight` property accepts several types of values to describe what will be highlighted. You can see the various ways to highlight things, along with example code, on **[the demo page](https://masterweber.github.io/highlight-in-textarea/)**.
 
 ## Styling
 
-For reference, **[the demo page](https://masterweber.github.io/highlight-within-textarea/)** has some sample styling (view source to see the CSS).
+For reference, **[the demo page](https://masterweber.github.io/highlight-in-textarea/)** has some sample styling (view source to see the CSS).
 
 There are some guidelines for getting your styles in the right places. Here are the classes you'll want to use.
 
-### .hwt-container
+### .hit-container
 
 Use for visibility, positioning, and background.
 - `display`
@@ -37,7 +37,7 @@ Use for visibility, positioning, and background.
 - `margin`
 - `background`
 
-### .hwt-content
+### .hit-content
 
 Use for sizing and text formatting.
 - `width`
@@ -47,7 +47,7 @@ Use for sizing and text formatting.
 - `color`
 - `font`
 
-### .hwt-content mark
+### .hit-content mark
 
 Use for highlighted text. Generally, stuff that doesn't change size is fine.
 - `background-color`
@@ -62,9 +62,9 @@ You can remove the plugin from a textarea with this.
 
 ```javascript
 const el = document.querySelector('.my-textarea');
-const hwt = new HighlightWithinTextarea(el,{
+const hit = new HighlightInTextarea(el, {
   highlight: whatever // string, regexp, array, function, or custom object
 });
 
-hwt.destroy();
+hit.destroy();
 ```
