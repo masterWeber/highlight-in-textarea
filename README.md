@@ -1,5 +1,9 @@
 # Highlight in Textarea
 
+[![npm version](https://badge.fury.io/js/highlight-in-textarea.svg)](https://badge.fury.io/js/highlight-in-textarea)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/masterWeber/highlight-in-textarea/main/LICENSE)
+[![npm](https://img.shields.io/npm/dt/highlight-in-textarea)](https://npmcharts.com/compare/highlight-in-textarea?interval=30&log=false&minimal=true)
+
 Library for highlighting bits of text within a textarea.
 Port of a [plugin](https://github.com/lonekorean/highlight-within-textarea) for jQuery to pure JS.
 
