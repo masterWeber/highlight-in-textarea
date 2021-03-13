@@ -1,6 +1,7 @@
 # Highlight in Textarea
 
 Library for highlighting bits of text within a textarea.
+Port of a [plugin](https://github.com/lonekorean/highlight-within-textarea) for jQuery to pure JS.
 
 ## Introduction
 

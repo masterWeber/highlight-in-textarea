@@ -1,7 +1,7 @@
 {
   "name": "highlight-in-textarea",
   "version": "1.0.0",
-  "description": "Library for highlighting bits of text within a textarea.",
+  "description": "Library for highlighting bits of text within a textarea. Port of a plugin for jQuery to pure JS.",
   "main": "src/highlight-in-textarea.js",
   "repository": {
     "type": "git",
